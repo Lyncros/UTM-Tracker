@@ -9,7 +9,7 @@ Para agregar la funcionalidad de captura en angular.
 
 1. Agregar el archivo **angularCapturaUTM.js** en la aplicación e incluirlo antes del app.js (Archivo principal de angular).
 
-2. Agregar el módulo **'capturaUTM'**.
+2. Agregar el módulo **'capturaUTM'** en el app y en el controlador.
 
 3. En el controlador de la vista en la que se quiere capturar se debe agregar la dependencia a  **capturaUTM** y para inicializarlo se debe llamar la función **captura()** del servicio, pasando como parámetro el nombre de la clase.
 

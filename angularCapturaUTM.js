@@ -9,7 +9,7 @@
 
         function setURL(param, con) {
             var utm = "utm_source=" + getParameterByName('utm_source') + "&utm_medium=" + getParameterByName('utm_medium') + "&utm_campaign=" + getParameterByName('utm_campaign');
-            return param + con + utm + "&referer=" + encodeURIComponent(utm);
+            return param + con + utm + "&referrer=" + encodeURIComponent(utm);
         }
 
         this.captura = function (className) {

@@ -7,7 +7,8 @@
     }
 
     function setURL(param, con) {
-        return param + con + "utm_source=" + getParameterByName('utm_source') + "&utm_medium=" + getParameterByName('utm_medium') + "&utm_campaign=" + getParameterByName('utm_campaign');
+        var utm = "utm_source=" + getParameterByName('utm_source') + "&utm_medium=" + getParameterByName('utm_medium') + "&utm_campaign=" + getParameterByName('utm_campaign');
+        return param + con + utm + "&referrer=" + encodeURIComponent(utm);
     }
 
     var x = document.getElementsByClassName(className);
